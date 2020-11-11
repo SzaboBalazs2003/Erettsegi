@@ -1,5 +1,7 @@
+
 .wrapper{
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+
 }
 nav{
     text-align: center;
@@ -8,9 +10,11 @@ nav{
 header{
     font-weight: bold;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .card-title{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .dropdown-item{
     text-align: center;
@@ -19,6 +23,7 @@ table{
     margin: 10%;
     width: 80%;
     border: solid 3px black;
+    font-family: 'Times New Roman', Times, serif;
 }
 td{
     text-align: center;
@@ -26,4 +31,14 @@ td{
 }
 .cim{
     font-weight: bold;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sz{
+    margin-left: 5%;
+    margin-right: 5%;
 }
