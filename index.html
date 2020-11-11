@@ -51,7 +51,7 @@
               <div class="card col-lg-4 col-md-12">
                   <div class="card-body">
                       <h5 class="card-title" id="Számitógépes vírusok">Számitógépes vírusok</h5>
-                      <p class="card-text">Olyan programokat nevezünk vírusok amelyek képesek reprodukálni, sokszorosítani önmagukat. Működésük, és terjedésük csak bizonyos közegben lehetséges. Működésüknek két ciklusa van. Először megpróbálnak minél több gépet megfertőzni, majd egy előre megadott esemény bekövetkeztekor, például egy előre meghatározott napon, kifejtik káros tevékenységüket. A szűkebb értelemben vett vírusok jellemzői, hogy végrehajthatóak, működőképesek és önmagukat más fájlokhoz másolva terjednek. A vírusoknak három nagy csoportja van, az állományvírus, a boot vírus, és a makrovírus. Az állományvírusok valamilyen futtatható állományhoz írják hozzá magukat, és az állomány futtatásakor működésbe lépnek.</p>
+                      <p class="card-text">Olyan programokat nevezünk vírusok amelyek képesek reprodukálni, sokszorosítani önmagukat. Működésük, és terjedésük csak bizonyos közegben lehetséges. Működésüknek két ciklusa van. Először megpróbálnak minél több gépet megfertőzni, majd egy előre megadott esemény bekövetkeztekor, például egy előre meghatározott napon, kifejtik káros tevékenységüket. A szűkebb értelemben vett vírusok jellemzői, hogy végrehajthatóak, működőképesek és önmagukat más fájlokhoz másolva terjednek. A vírusoknak három nagy csoportja van, az állományvírus, a boot vírus, és a makrovírus. Az állományvírusok valamilyen futtatható állományhoz írják hozzá magukat, és az állomány futtatásakor működésbe lépnek. A boot vírusok olyan vírusok amelyek a boot szektorba írják bele magukat, így minden indításkor azonnal lefutnak. Ezért is nehéz védekezni ellenük mert </p>
                   </div>
               </div>
               <div class="card col-lg-4 col-md-12">
@@ -78,6 +78,79 @@
 
       </p>
       <div id="Értékelés"><header><h1>Értékelő lap</h1></header>
+        <form>
+          <table>
+            <tr>
+              <td colspan="2" class="cim">Írásbeli vizsga pontszámai</td>
+            </tr>
+            <tr>
+              <td>
+                <label for="halozat">Hálózati Ismeretek: </label>
+              </td>
+              <td>
+                <input type="number" id="halozat" name="halozat">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="prog">Programozás: </label>
+              </td>
+              <td>
+                <input type="number" id="prog" name="prog">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="wa">Weboldalak kódolása és adatbázis-kezelés: </label>
+              </td>
+              <td>
+                <input type="number" id="wa" name="wa">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cim">Szóbeli vizsga pontszámai</td>
+            </tr>
+            <tr>
+              <td>
+                <label for="tart">Tartalom: </label>
+              </td>
+              <td>
+                <input type="number" id="tart" name="tart">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="fel">Felépítés: </label>
+              </td>
+              <td>
+                <input type="number" id="fel" name="fel">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="elo">Előadásmód, szaknyelv használata: </label>
+              </td>
+              <td>
+                <input type="number" id="elo" name="elo">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cim">Értékelések:</td>
+            </tr>
+            <tr>
+              <td colspan="2" id="irasbeli">Írásbeli vizsga összpontszáma: </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="szobeli">Szóbeli vizsga összpontszáma: </td>
+            </tr>            
+            <tr>
+              <td colspan="2" id="kozep">Középszintű vizsga érdemjegye: </td>
+            </tr>
+            <tr>
+              <td colspan="2" id="emelt">Emeltszintű vizsga érdemjegye: </td>
+            </tr>
+          </table>
+        </form>
       </div>
     </main>
   </div>  
