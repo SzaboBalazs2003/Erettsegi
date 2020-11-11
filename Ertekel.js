@@ -21,24 +21,29 @@ function Ertekeles(){
         document.getElementById("kozep").innerHTML="1";
         document.getElementById("emelt").innerHTML="1";
     }
-    else if (szaz <= 25){
+    else if (szaz < 25){
         document.getElementById("kozep").innerHTML="1";
-        document.getElementById("emelt").innerHTML="1";
     }
-    else if (szaz <= 40){
+    else if (szaz < 40){
         document.getElementById("kozep").innerHTML="2";
-        document.getElementById("emelt").innerHTML="2";
     }
-    else if (szaz <= 60){
+    else if (szaz < 60){
         document.getElementById("kozep").innerHTML="3";
-        document.getElementById("emelt").innerHTML="3";
     }
-    else if (szaz <= 80){
+    else if (szaz < 80){
         document.getElementById("kozep").innerHTML="4";
-        document.getElementById("emelt").innerHTML="4";
     }
     else{
         document.getElementById("kozep").innerHTML="5";
-        document.getElementById("emelt").innerHTML="5";
     }
+    if (szaz < 25)
+        document.getElementById("emelt").innerHTML="1";
+    else if (szaz < 33)
+        document.getElementById("emelt").innerHTML="2";
+    else if (szaz < 47)
+        document.getElementById("emelt").innerHTML="3";
+    else if (szaz < 60)
+        document.getElementById("emelt").innerHTML="4";
+    else
+        document.getElementById("emelt").innerHTML="5";
 }
