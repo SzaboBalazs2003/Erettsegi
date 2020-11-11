@@ -88,7 +88,7 @@
                 <label for="halozat">Hálózati Ismeretek: </label>
               </td>
               <td>
-                <input type="number" id="halozat" name="halozat">
+                <input type="number" id="halozat" min="0" max="40">
               </td>
             </tr>
             <tr>
@@ -96,7 +96,7 @@
                 <label for="prog">Programozás: </label>
               </td>
               <td>
-                <input type="number" id="prog" name="prog">
+                <input type="number" id="prog" min="0" max="40">
               </td>
             </tr>
             <tr>
@@ -104,7 +104,7 @@
                 <label for="wa">Weboldalak kódolása és adatbázis-kezelés: </label>
               </td>
               <td>
-                <input type="number" id="wa" name="wa">
+                <input type="number" id="wa" min="0" max="40">
               </td>
             </tr>
             <tr>
@@ -115,7 +115,7 @@
                 <label for="tart">Tartalom: </label>
               </td>
               <td>
-                <input type="number" id="tart" name="tart">
+                <input type="number" id="tart"  min="0" max="24">
               </td>
             </tr>
             <tr>
@@ -123,7 +123,7 @@
                 <label for="fel">Felépítés: </label>
               </td>
               <td>
-                <input type="number" id="fel" name="fel">
+                <input type="number" id="fel"  min="0" max="3">
               </td>
             </tr>
             <tr>
@@ -131,23 +131,26 @@
                 <label for="elo">Előadásmód, szaknyelv használata: </label>
               </td>
               <td>
-                <input type="number" id="elo" name="elo">
+                <input type="number" id="elo" min="0" max="3">
               </td>
             </tr>
             <tr>
               <td colspan="2" class="cim">Értékelések:</td>
             </tr>
             <tr>
-              <td colspan="2" id="irasbeli">Írásbeli vizsga összpontszáma: </td>
+              <td colspan="2">Írásbeli vizsga összpontszáma: <span id="irasbeli"></span></td> 
             </tr>
             <tr>
-              <td colspan="2" id="szobeli">Szóbeli vizsga összpontszáma: </td>
+              <td colspan="2">Szóbeli vizsga összpontszáma: <span id="szobeli"></span> </td>
             </tr>            
             <tr>
-              <td colspan="2" id="kozep">Középszintű vizsga érdemjegye: </td>
+              <td colspan="2">Középszintű vizsga érdemjegye: <span id="kozep"></span></td>
             </tr>
             <tr>
-              <td colspan="2" id="emelt">Emeltszintű vizsga érdemjegye: </td>
+              <td colspan="2">Emeltszintű vizsga érdemjegye: <span id="emelt"></span></td>
+            </tr>
+            <tr>
+              <td colspan="2" id="kuld"><button onclick="Ertekeles()">Értékelés</button></td>
             </tr>
           </table>
         </form>
@@ -155,4 +158,5 @@
     </main>
   </div>  
 </body>
+<script src="Ertekel.js"></script>
 </html>
