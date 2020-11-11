@@ -3,10 +3,15 @@
 }
 nav{
     text-align: center;
+    position: relative;
 }
 header{
     font-weight: bold;
+    text-align: center;
 }
 .card-title{
+    text-align: center;
+}
+.dropdown-item{
     text-align: center;
 }
